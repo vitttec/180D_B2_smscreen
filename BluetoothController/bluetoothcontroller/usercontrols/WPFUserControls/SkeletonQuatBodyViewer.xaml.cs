@@ -30,7 +30,7 @@ namespace BluetoothController.WPFUserControls
         {
             InitializeComponent();
             this.Unloaded += (sender, e) => { this.Cancle.Cancel(); };
-            Task.Factory.StartNew(this.WorkerFucntion, this.Dispatcher, Cancle.Token);
+            //Task.Factory.StartNew(this.WorkerFucntion, this.Dispatcher, Cancle.Token);
         }
 
         protected void WorkerFucntion(object d)
